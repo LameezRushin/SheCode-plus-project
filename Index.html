@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-app">
+      <form id="search-city">
+        <input
+          class="city-search-bar"
+          type="text"
+          id="primary-search"
+          placeholder="Enter a City"
+        />
+        <input type="submit" value="Search" class="city-search-button" />
+      </form>
+      <div class="current-weather">
+        <div>
+          <h1 class="current-city">Cape Town</h1>
+          <p class="current-details">
+            <span id="current-date"></span>, broken clouds
+            <br />
+            Humidity: <strong class="current-details-HW">60%</strong>, Wind:
+            <strong class="current-details-HW">9.2km/h</strong>
+          </p>
+        </div>
+        <div class="current-temperature">
+          <span class="current-temp-icon">🌤</span
+          ><span class="current-temp-number">21</span
+          ><span class="current-temp-degree">&deg;</span>
+        </div>
+      </div>
+      <div class="weekly-forecast">
+        <ul>
+          <li>
+            Thu
+            <br />
+            ⛅
+            <br />
+            <strong>21&deg;</strong> 17&deg;
+          </li>
+          <li>
+            Fri
+            <br />
+            ☁
+            <br />
+            <strong>23&deg;</strong> 19&deg;
+          </li>
+          <li>
+            Sat
+            <br />
+            ☀
+            <br />
+            <strong>23&deg;</strong> 18&deg;
+          </li>
+          <li>
+            Sun
+            <br />
+            ☀
+            <br />
+            <strong>22&deg;</strong> 18&deg;
+          </li>
+          <li>
+            Mon
+            <br />
+            ☀
+            <br />
+            <strong>24&deg;</strong> 18&deg;
+          </li>
+        </ul>
+      </div>
+      <footer>
+        This project was coded by Lameez Rushin and is
+        <a href="https://github.com/shecodesio/weather" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://shecodes-weather.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/js.app"></script>
+  </body>
+</html>
